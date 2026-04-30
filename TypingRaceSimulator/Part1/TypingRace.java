@@ -22,7 +22,7 @@ public class TypingRace
 
     // Accuracy thresholds for mistype and burnout events
     // (Ty tuned these values "by feel". They may need adjustment.)
-    private static final BigDecimal MISTYPE_BASE_CHANCE = BigDecimal.valueOf(0.3);
+    private static final BigDecimal MISTYPE_BASE_CHANCE = BigDecimal.valueOf(0.15);
     private static final int SLIDE_BACK_AMOUNT = 2;
     private static final int BURNOUT_DURATION = 3;
 
