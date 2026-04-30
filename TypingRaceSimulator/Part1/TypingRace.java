@@ -22,15 +22,15 @@ public class TypingRace
 
     // Accuracy thresholds for mistype and burnout events
     // (Ty tuned these values "by feel". They may need adjustment.)
-    private static final BigDecimal MISTYPE_BASE_CHANCE = BigDecimal.valueOf(0.3);
+    private static final BigDecimal MISTYPE_BASE_CHANCE = BigDecimal.valueOf(0.15);
     private static final int SLIDE_BACK_AMOUNT = 2;
     private static final int BURNOUT_DURATION = 3;
 
     public static void main(String[] args) {
-        TypingRace race = new TypingRace(1);
-        race.addTypist(new Typist('1', "TURBOFINGERS", BigDecimal.valueOf(1.0)), 1); 
-        race.addTypist(new Typist('2', "QWERTY_QUEEN",  BigDecimal.valueOf(1.0)), 2);
-        race.addTypist(new Typist('3', "HUNT_N_PECK",   BigDecimal.valueOf(1.0)), 3);
+        TypingRace race = new TypingRace(20);
+        race.addTypist(new Typist('1', "TURBOFINGERS", BigDecimal.valueOf(0.8)), 1); 
+        race.addTypist(new Typist('2', "QWERTY_QUEEN",  BigDecimal.valueOf(0.6)), 2);
+        race.addTypist(new Typist('3', "HUNT_N_PECK",   BigDecimal.valueOf(0.3)), 3);
         race.startRace();
     }
 
